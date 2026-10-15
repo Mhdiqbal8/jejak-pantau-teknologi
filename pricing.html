@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+  </head>
+  <title>Halaman pricing</title>
+  <body>
+    <div class="container mx-auto px-7">
+      <!-- container -->
+      {{> nav}}
+      <main>
+        <!-- section -->
+        <section class="py-16 px-4 font-sans relative">
+          <h2 class="text-5xl md:text-[4rem] text-center font-bold text-[#1f2937] mb-10">
+            You are not dreaming!
+            <!-- <span class="relative inline-block">Questions? </span> -->
+          </h2>
+          <div class="max-w-5xl mx-auto">
+            <!-- Toggle Yearly / Monthly -->
+            <div class="flex justify-center mb-12">
+              <div class="bg-gray-100 rounded-full py-1.5 px-2 flex items-center shadow-inner border border-gray-200">
+                <span class="px-4 text-sm font-semibold text-gray-800">Yearly</span>
+                <!-- Switch icon -->
+                <div class="w-11 h-6 bg-white border border-gray-300 rounded-full flex items-center px-1 shadow-sm">
+                  <div class="w-4 h-4 bg-[#714B67] rounded-full"></div>
+                </div>
+                <span class="px-4 text-sm font-semibold text-gray-500">Monthly</span>
+              </div>
+            </div>
+          </div>
+          <!-- Grid Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 relative z-10 md:px-12">
+            <!-- Card 1: One App Free -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col h-full md:h-[400px] border-t-[6px] border-[#00A0F0]">
+              <div class="p-8 flex-grow">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">One App Free</h3>
+                <div class="flex items-start mb-6 text-sm font-bold text-[#00A0F0]">
+                  <span class="mt-2 mr-1">Rp</span>
+                  <span class="text-7xl tracking-tighter">0</span>
+                </div>
+                <ul class="text-[15px] text-gray-700 space-y-2 mb-8">
+                  <li class="font-bold text-black"><span class="">One app</span>, unlimited users</li>
+                  <li>Odoo Online</li>
+                </ul>
+              </div>
+              <div class="p-8 pt-0 mt-auto">
+                <button
+                  class="w-full py-3.5 bg-[#714B67] hover:bg-[#5a3c52] text-white font-bold rounded-md text-sm transition-colors shadow-md tracking-wide">
+                  START NOW
+                </button>
+              </div>
+            </div>
+            <!-- Card 2: Standard -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col h-full border-t-[6px] border-[#F26A6C]">
+              <div class="p-8 flex-grow">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Standard</h3>
+                <div class="flex items-start mb-2">
+                  <span class="text-sm font-bold text-[#F26A6C] mt-2 mr-1">Rp</span>
+                  <span class="text-6xl font-bold text-[#F26A6C] tracking-tighter leading-none">110rb</span>
+                  <div class="ml-2 text-xs text-gray-600 flex flex-col justify-end pb-1 h-[60px]">
+                    <div class="relative inline-block w-max mb-1">
+                      <span class="font-semibold text-gray-800">Rp 137,500</span>
+                      <span class="text-red-500 absolute -top-1 -right-2">*</span>
+                      <!-- Garis coret merah miring -->
+                      <div class="absolute w-[110%] h-[1.5px] bg-red-500 top-1/2 -left-[5%] transform -translate-y-1/2 -rotate-12"></div>
+                    </div>
+                    <span>/ user / month</span>
+                  </div>
+                </div>
+                <ul class="text-[15px] text-gray-700 space-y-2 mb-8 mt-8">
+                  <li class="font-bold text-black">All apps</li>
+                  <li>Odoo Online</li>
+                </ul>
+              </div>
+              <div class="p-8 pt-0 mt-auto flex flex-col space-y-3">
+                <button
+                  class="w-full py-3.5 bg-[#714B67] hover:bg-[#5a3c52] text-white font-bold rounded-md text-sm transition-colors shadow-md tracking-wide">
+                  BUY NOW
+                </button>
+                <button
+                  class="w-full py-3.5 bg-[#F8F9FA] hover:bg-gray-200 text-[#714B67] font-bold rounded-md text-sm transition-colors border border-gray-100 tracking-wide">
+                  FREE TRIAL
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 3: Custom -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col h-full border-t-[6px] border-[#00CCAA]">
+              <div class="p-8 flex-grow">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Custom</h3>
+                <div class="flex items-start mb-2">
+                  <span class="text-sm font-bold text-[#00CCAA] mt-2 mr-1">Rp</span>
+                  <span class="text-6xl font-bold text-[#00CCAA] tracking-tighter leading-none">203rb</span>
+                  <div class="ml-2 text-xs text-gray-600 flex flex-col justify-end pb-1 h-[60px]">
+                    <div class="relative inline-block w-max mb-1">
+                      <span class="font-semibold text-gray-800">Rp 255,000</span>
+                      <span class="text-red-500 absolute -top-1 -right-2">*</span>
+                      <!-- Garis coret merah miring -->
+                      <div class="absolute w-[110%] h-[1.5px] bg-red-500 top-1/2 -left-[5%] transform -translate-y-1/2 -rotate-12"></div>
+                    </div>
+                    <span>/ user / month</span>
+                  </div>
+                </div>
+                <ul class="text-[15px] text-gray-700 space-y-2 mb-8 mt-8">
+                  <li class="font-bold text-black">All apps</li>
+                  <li>Odoo Online / Odoo.sh** / On-premise</li>
+                  <li>Odoo Studio / Agentic AI</li>
+                  <li>Multi-Company</li>
+                  <li>External API</li>
+                </ul>
+              </div>
+              <div class="p-8 pt-0 mt-auto flex flex-col space-y-3">
+                <button
+                  class="w-full py-3.5 bg-[#714B67] hover:bg-[#5a3c52] text-white font-bold rounded-md text-sm transition-colors shadow-md tracking-wide">
+                  BUY NOW
+                </button>
+                <button
+                  class="w-full py-3.5 bg-[#F8F9FA] hover:bg-gray-200 text-[#714B67] font-bold rounded-md text-sm transition-colors border border-gray-100 tracking-wide">
+                  FREE TRIAL
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-16 bg-[#f8f9fa] font-sans text-center px-4 rounded-2xl" id="custom-plans">
+          <div class="max-w-5xl mx-auto">
+            <!-- Teks Header -->
+            <p class="text-lg text-gray-800 mb-10">
+              The <strong class="font-bold">Standard</strong> and <strong class="font-bold">Custom</strong> plans include all apps for a single fee:
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-10 max-w-4xl mx-auto mb-16">
+              <!-- App 1: Sales -->
+              <div class="flex flex-col items-center w-20">
+                <div
+                  class="w-[84px] h-[84px] bg-white rounded-2xl shadow-sm flex items-center justify-center mb-3 hover:-translate-y-1 transition-transform duration-300">
+                  <img src="/path-ke-ikon-anda/sales.png" alt="Sales" class="w-10 h-10 object-contain" />
+                </div>
+                <span class="text-[15px] font-semibold text-gray-600">Sales</span>
+              </div>
+
+              <!-- App 2: eCommerce -->
+              <div class="flex flex-col items-center w-20">
+                <div
+                  class="w-[84px] h-[84px] bg-white rounded-2xl shadow-sm flex items-center justify-center mb-3 hover:-translate-y-1 transition-transform duration-300">
+                  <img src="/path-ke-ikon-anda/ecommerce.png" alt="eCommerce" class="w-10 h-10 object-contain" />
+                </div>
+                <span class="text-[15px] font-semibold text-gray-600">eCommerce</span>
+              </div>
+
+              <!-- App 3: Sign -->
+              <div class="flex flex-col items-center w-20">
+                <div
+                  class="w-[84px] h-[84px] bg-white rounded-2xl shadow-sm flex items-center justify-center mb-3 hover:-translate-y-1 transition-transform duration-300">
+                  <img src="/path-ke-ikon-anda/sign.png" alt="Sign" class="w-10 h-10 object-contain" />
+                </div>
+                <span class="text-[15px] font-semibold text-gray-600">Sign</span>
+              </div>
+
+              <!-- App 4: Website -->
+              <div class="flex flex-col items-center w-20">
+                <div
+                  class="w-[84px] h-[84px] bg-white rounded-2xl shadow-sm flex items-center justify-center mb-3 hover:-translate-y-1 transition-transform duration-300">
+                  <img src="/path-ke-ikon-anda/website.png" alt="Website" class="w-10 h-10 object-contain" />
+                </div>
+                <span class="text-[15px] font-semibold text-gray-600">Website</span>
+              </div>
+
+              <!-- App 5: Accounting -->
+              <div class="flex flex-col items-center w-20">
+                <div
+                  class="w-[84px] h-[84px] bg-white rounded-2xl shadow-sm flex items-center justify-center mb-3 hover:-translate-y-1 transition-transform duration-300">
+                  <img src="/path-ke-ikon-anda/accounting.png" alt="Accounting" class="w-10 h-10 object-contain" />
+                </div>
+                <span class="text-[15px] font-semibold text-gray-600">Accounting</span>
+              </div>
+
+              <!-- App 6: CRM -->
+              <div class="flex flex-col items-center w-20">
+                <div
+                  class="w-[84px] h-[84px] bg-white rounded-2xl shadow-sm flex items-center justify-center mb-3 hover:-translate-y-1 transition-transform duration-300">
+                  <img src="/path-ke-ikon-anda/crm.png" alt="CRM" class="w-10 h-10 object-contain" />
+                </div>
+                <span class="text-[15px] font-semibold text-gray-600">CRM</span>
+              </div>
+
+              <!-- App 7: Inventory -->
+              <div class="flex flex-col items-center w-20">
+                <div
+                  class="w-[84px] h-[84px] bg-white rounded-2xl shadow-sm flex items-center justify-center mb-3 hover:-translate-y-1 transition-transform duration-300">
+                  <img src="/path-ke-ikon-anda/inventory.png" alt="Inventory" class="w-10 h-10 object-contain" />
+                </div>
+                <span class="text-[15px] font-semibold text-gray-600">Inventory</span>
+              </div>
+
+              <!-- App 8: HR -->
+              <div class="flex flex-col items-center w-20">
+                <div
+                  class="w-[84px] h-[84px] bg-white rounded-2xl shadow-sm flex items-center justify-center mb-3 hover:-translate-y-1 transition-transform duration-300">
+                  <img src="/path-ke-ikon-anda/hr.png" alt="HR" class="w-10 h-10 object-contain" />
+                </div>
+                <span class="text-[15px] font-semibold text-gray-600">HR</span>
+              </div>
+
+              <!-- App 9: Project (Di baris bawah) -->
+              <div class="flex flex-col items-center w-20 md:ml-20">
+                <div
+                  class="w-[84px] h-[84px] bg-white rounded-2xl shadow-sm flex items-center justify-center mb-3 hover:-translate-y-1 transition-transform duration-300">
+                  <img src="/path-ke-ikon-anda/project.png" alt="Project" class="w-10 h-10 object-contain" />
+                </div>
+                <span class="text-[15px] font-semibold text-gray-600">Project</span>
+              </div>
+
+              <!-- App 10: POS (Di baris bawah) -->
+              <div class="flex flex-col items-center w-20 md:ml-[320px]">
+                <div
+                  class="w-[84px] h-[84px] bg-white rounded-2xl shadow-sm flex items-center justify-center mb-3 hover:-translate-y-1 transition-transform duration-300">
+                  <img src="/path-ke-ikon-anda/pos.png" alt="POS" class="w-10 h-10 object-contain" />
+                </div>
+                <span class="text-[15px] font-semibold text-gray-600">POS</span>
+              </div>
+            </div>
+
+            <!-- Teks "And many more ->" -->
+            <div class="mb-12 flex justify-center items-center space-x-3 text-[#714B67]">
+              <span class="text-3xl md:text-4xl font-bold" style="font-family: &quot;Caveat&quot;, cursive">And many more</span>
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </div>
+
+            <!-- Teks Deskripsi -->
+            <div class="mb-10 text-[17px] text-gray-800">
+              <p class="mb-1">
+                All our plans include <strong class="font-bold">unlimited support, hosting</strong> and
+                <strong class="font-bold">maintenance</strong>.
+              </p>
+              <p>With no hidden costs, no limit on features or data: enjoy real transparency!</p>
+            </div>
+
+            <!-- Teks Disclaimer (Tanda Bintang) -->
+            <div class="text-[15px] text-gray-800 space-y-1 mb-10">
+              <p><sup class="text-xs">(*)</sup> The discount is valid for 12 months, for initial users ordered.</p>
+              <p><sup class="text-xs">(**)</sup> Cost for Odoo.sh hosting not included.</p>
+            </div>
+
+            <!-- Tombol "Meet an advisor" -->
+            <button
+              class="inline-flex items-center justify-center px-8 py-3.5 bg-white border-2 border-gray-100 rounded-xl shadow-sm text-[16px] font-bold text-[#714B67] hover:bg-gray-50 transition-colors">
+              Meet an advisor
+              <!-- Icon Panah Bawah -->
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+          </div>
+        </section>
+        <section class="max-w-4xl mx-auto px-4 py-16 font-sans" id="questions">
+          <h2 class="text-5xl md:text-[4rem] font-bold text-[#1f2937] mb-6">
+            Any
+            <span class="relative inline-block">Questions? </span>
+          </h2>
+
+          <!-- Deskripsi (P) -->
+          <p class="text-lg text-gray-600 mb-10">
+            If the answer to your question is not on this page, please contact our
+            <a href="#" class="text-[#714B67] font-semibold underline decoration-2 underline-offset-4 hover:text-[#5a3c52] transition-colors">
+              Account Managers
+            </a>
+          </p>
+
+          <!-- Container Accordion/Dropdown -->
+          <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <!-- Item 1 (Terbuka secara default dengan atribut 'open') -->
+            <details class="group border-b border-gray-200 last:border-b-0" open>
+              <!-- class 'list-none' dan '[&::-webkit-details-marker]:hidden' untuk menghilangkan icon panah bawaan browser -->
+              <summary
+                class="flex justify-between items-center cursor-pointer p-6 bg-white group-open:bg-[#f4eff3] transition-colors list-none [&::-webkit-details-marker]:hidden">
+                <span class="font-normal text-gray-800 text-[17px]">Do I really have access to hundreds of apps and modules for a single price?</span>
+                <!-- Icon panah yang akan berputar saat terbuka -->
+                <span class="transition-transform duration-300 group-open:rotate-180 text-gray-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </summary>
+              <div class="p-6 bg-white text-gray-700 text-[15px] border-t border-gray-100">😉 Yes, you are not dreaming.</div>
+            </details>
+
+            <!-- Item 2 -->
+            <details class="group border-b border-gray-200 last:border-b-0">
+              <summary
+                class="flex justify-between items-center cursor-pointer p-6 bg-white group-open:bg-[#f4eff3] transition-colors list-none [&::-webkit-details-marker]:hidden">
+                <span class="font-normal text-gray-800 text-[17px]">What's included in the subscription?</span>
+                <span class="transition-transform duration-300 group-open:rotate-180 text-gray-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </summary>
+              <div class="p-6 bg-white text-gray-700 text-[15px] border-t border-gray-100">
+                All Odoo standard apps and modules are included in the subscription plan.
+              </div>
+            </details>
+
+            <!-- Item 3 -->
+            <details class="group border-b border-gray-200 last:border-b-0">
+              <summary
+                class="flex justify-between items-center cursor-pointer p-6 bg-white group-open:bg-[#f4eff3] transition-colors list-none [&::-webkit-details-marker]:hidden">
+                <span class="font-normal text-gray-800 text-[17px]">What is a Light User ?</span>
+                <span class="transition-transform duration-300 group-open:rotate-180 text-gray-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </summary>
+              <div class="p-6 bg-white text-gray-700 text-[15px] border-t border-gray-100">
+                A light user is typically a user who only needs restricted access to specific features.
+              </div>
+            </details>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- footer -->
+    {{> footer }}
+  </body>
+</html>

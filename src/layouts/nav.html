@@ -1,0 +1,61 @@
+<nav class="flex items-center justify-between px-8 py-4 bg-white w-full">
+  <!-- navigasi -->
+  <div class="flex items-center flex-shrink-0">
+    <a href="index.html" class="flex items-center">
+      <!--logo -->
+      <!-- <span class="text-[#875A7B]">o</span><span class="text-gray-500">doo</span> -->
+      <img src="/src/assets/img/master-logo.png" alt="" class="w-15" />
+    </a>
+  </div>
+
+  <div class="hidden md:flex items-center space-x-10 font-semibold text-gray-700">
+    <!-- <a href="#" class="hover:text-black transition-colors">Apps</a> -->
+    <!-- Wrapper Dropdown (Tambahkan class 'relative' dan 'group') -->
+    <a href="index.html" class="hover:text-black transition-colors">Beranda</a>
+    <div class="relative group">
+      <!-- Menu Trigger (Teks "Apps") -->
+      <a href="#" class="flex items-center gap-1 hover:text-black transition-colors py-2 cursor-pointer">
+        Produk
+        <!-- Icon Panah Bawah -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="transition-transform duration-300 group-hover:rotate-180">
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </a>
+
+      <!-- Isi Dropdown Menu -->
+      <!-- opacity-0 dan invisible membuatnya tersembunyi. Akan muncul saat parent 'group' di hover -->
+      <div
+        class="absolute left-0 top-full w-48 bg-white border border-gray-100 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden transform translate-y-2 group-hover:translate-y-0">
+        <div class="py-2 flex flex-col">
+          <a href="erp-tekstil.html" class="px-5 py-2.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-black transition-colors">ERP Textile</a>
+          <a href="#" class="px-5 py-2.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-black transition-colors">eCommerce</a>
+          <a href="#" class="px-5 py-2.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-black transition-colors">Accounting</a>
+          <a href="#" class="px-5 py-2.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-black transition-colors">Website</a>
+        </div>
+      </div>
+    </div>
+    <a href="about.html" class="hover:text-black transition-colors">Tentang Kami</a>
+    <a href="article.html" class="hover:text-black transition-colors">Berita</a>
+    <a href="#" class="hover:text-black transition-colors">Karir</a>
+    <!-- <a href="pricing.html" class="hover:text-black transition-colors">Pricing</a> -->
+    <a href="help.html" class="hover:text-black transition-colors">Bantuan</a>
+  </div>
+
+  <div class="flex items-center space-x-6">
+    <button
+      type="button"
+      class="bg-gradient-to-r from-[#facc10] to-[#facc15] text-white font-bold text-[15px] px-6 py-2.5 rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition-all duration-200">
+      Daftar Sekarang
+    </button>
+  </div>
+</nav>

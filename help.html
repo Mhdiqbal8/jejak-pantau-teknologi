@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="src/assets/img/favicon.ico" />
+    <title>PT Jejak Pantau Teknologi | Bantuan</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="container mx-auto px-7">
+      {{> nav }}
+      <!-- container -->
+      <section id="informasi-kontak" name="Informasi Kontak" class="bg-white py-16 px-6 font-sans">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Kolom Kiri: Gambar & Dekorasi (5 Kolom) -->
+          <div class="lg:col-span-6 relative flex justify-center">
+            <!-- Dekorasi Grid Kiri Atas -->
+            <div
+              class="absolute -top-6 -left-6 w-32 h-32 border border-gray-200 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:16px_16px] rounded-2xl -z-10"></div>
+
+            <!-- Kotak Foto Profil -->
+            <div class="w-full">
+              <img src="src/assets/img/contact.png" alt="Informasi Kontak" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- Dekorasi Titik-titik & Panah -->
+            <div
+              class="absolute -bottom-4 right-4 w-20 h-20 bg-[radial-gradient(#94a3b8_2px,transparent_2px)] [background-size:12px_12px] opacity-60 -z-10"></div>
+          </div>
+
+          <!-- Kolom Kanan: Teks & Detail Kontak (7 Kolom) -->
+          <div class="lg:col-span-6 flex flex-col justify-center">
+            <span class="inline-block bg-gray-100 text-gray-800 font-semibold text-xs px-3 py-1.5 rounded-full w-fit mb-4">Informasi Kontak</span>
+
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight leading-tight">
+              Hubungi kami jika Anda butuh bantuan & kebutuhan apapun
+            </h2>
+
+            <p class="text-gray-600 text-[15px] leading-relaxed mb-8">
+              Kami menghargai masukan dan pertanyaan Anda. Apakah Anda memiliki pertanyaan tentang layanan kami, memerlukan bantuan, atau ingin
+              menjajaki potensi kolaborasi, kami siap membantu Anda. Silakan menghubungi kami melalui kontak yang tersedia.
+            </p>
+
+            <!-- Informasi Detail (Alamat, Telepon, Email) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 border-t border-gray-100">
+              <!-- Alamat -->
+              <div>
+                <h4 class="font-bold text-gray-900 text-base mb-2">Alamat</h4>
+                <p class="text-gray-600 text-sm leading-relaxed">Jl. Raya PLP Curug No.8, Sukabakti, Kec. Curug, Kabupaten Tangerang, Banten 15810</p>
+              </div>
+
+              <!-- Telepon & Email -->
+              <div class="flex flex-col gap-6">
+                <div>
+                  <h4 class="font-bold text-gray-900 text-base mb-2">Telepon</h4>
+                  <p class="text-gray-600 text-sm">+62831 5962 4216</p>
+                  <p class="text-gray-600 text-sm">+62831 5962 4216</p>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 text-base mb-2">Email</h4>
+                  <p class="text-gray-600 text-sm">kamisupport@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#f8f9fa] py-16 px-4 font-sans text-gray-900 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+        <div class="max-w-5xl mx-auto">
+          <!-- Header Section -->
+          <div class="mb-10">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 tracking-tight leading-tight">Alamat Kantor Kami</h2>
+            <p class="text-gray-600 text-[15px] leading-relaxed mb-8">Tangerang, Indonesia</p>
+          </div>
+
+          <div class="w-full h-[450px] rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-200">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3966.6686307791115!2d106.6698253749899!3d-6.175098193812298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTAnMzAuNCJTIDEwNsKwNDAnMjAuNiJF!5e0!3m2!1sid!2sid!4v1791655137676!5m2!1sid!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+    {{> footer}}
+  </body>
+</html>
